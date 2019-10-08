@@ -23,11 +23,13 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    './plugins/fontawesome.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -50,6 +52,7 @@ module.exports = {
   */
   axios: {
   },
+
   /*
   ** Build configuration
   */
@@ -57,7 +60,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   }
-}
+};
