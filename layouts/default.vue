@@ -28,22 +28,21 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-/* body {
-  margin: 0 1px;
-} */
+
 p {
   font-size: 1.2rem;
+  padding-right: 5px;
 }
 /* .container {
   @apply min-h-screen flex justify-center text-center mx-auto;
 } */
 .container {
-  margin: 0 auto;
+  margin: 0 auto 65px auto;
   /* min-height: 100vh; */
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  /* align-items: center; */
+  text-align: left;
 }
 *,
 *:before,
@@ -97,8 +96,9 @@ p {
   border: 1px solid #35495e;
   color: #35495e;
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+  padding: 5px 10px;
+  margin: 15px;
+  text-align: center;
 }
 
 .button--grey:hover {

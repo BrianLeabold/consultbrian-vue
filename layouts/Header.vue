@@ -26,12 +26,12 @@
               </a>
             </div>
             <div class="w-1/3 text-yellow-900">
-              <a href="#contact">
+              <nuxt-link to="/contact">
                 <font-awesome-icon
                   class="h-8 w-8 text-yellow-900"
                   :icon="{ prefix: 'fas', iconName: 'envelope' }"
                 />
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>

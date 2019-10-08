@@ -1,12 +1,12 @@
 <template>
-  <div class="container md:mb-3 mb-24">
+  <div class="container">
     <div>
-      <h2 class="subtitle">A Little About Me</h2>
+      <h2 class="title ml-2 md:ml-0">A Little About Me</h2>
       <div class="content">
-        <h3>Grandson of a carpenter Son of a remodeler</h3>
+        <h3 class="subtitle">Grandson of a carpenter Son of a remodeler</h3>
         <p class="mx-2">
           <img
-            class="mx-auto my-3 float-right"
+            class="mx-auto pl-3 float-right h-48 w-48"
             src="../static/me.jpg"
             title="Brian Leabold"
             alt="Brian Leabold"
@@ -22,10 +22,9 @@
           I was able to see places and things that has fueled my ability to envision the big picture, yet
           focus on important details that make my projects feel complete.
         </p>
-        <p>
-          <nuxt-link to="/contact">Schedule your free consultation today</nuxt-link>
-        </p>
-        <h3>Providing an array of services for my customers</h3>
+        <nuxt-link class="button--grey" to="/contact">Schedule your free consultation today</nuxt-link>
+
+        <h3 class="subtitle">Providing an array of services for my customers</h3>
         <p>
           From advice and assistance on small projects; to design, layout`, and contractor liaison. Do you have
           an idea or a concept you like, but you don't know if it's possible? I can help with that. Have a DIY
@@ -35,20 +34,32 @@
           It's never easy managing large construction/remodeling projects. By setting up timelines and goals with your
           contractors and only billing you my actual time, you can save money over using a GC.
         </p>
-        <p>
-          <nuxt-link to="/services">More about the services I provide</nuxt-link>
-        </p>
+        <nuxt-link class="button--grey" to="/services">More about the services I provide</nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  head() {
+    return {
+      title: `Consult Brian`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `I started swinging a hammer the summer I turned 12. Nailing down plywood sub-floor by hand,
+          side by side with my grand-dad and my father, is a fond memory that has fueled my love of
+          construction all my life.`
+        },
+        {
+          hid: 'author',
+          name: 'author',
+          content: 'Brian Leabold'
+        }
+      ]
+    }
   }
 }
 </script>

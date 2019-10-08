@@ -1,5 +1,5 @@
 <template>
-  <footer class="fixed bottom-auto w-full">
+  <footer class="fixed bottom-0 w-full">
     <nav class="bg-blue-800 border border-blue-800 text-white">
       <ul class="flex justify-around text-center">
         <nuxt-link
