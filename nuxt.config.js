@@ -5,11 +5,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || 'ConsultBrian.com',
+    title: 'ConsultBrian.com',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'I started swinging a hammer the summer I turned 12. Nailing down plywood sub-floor by hand, side by side with my grand-dad and my father, is a fond memory that has fueled my love of construction all my life.' }
+      { hid: 'description', name: 'description', content: 'I started swinging a hammer the summer I turned 12. Nailing down plywood sub-floor by hand, side by side with my grand-dad and my father, is a fond memory that has fueled my love of construction all my life.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -45,6 +45,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    ['storyblok-nuxt', { accessToken: '3LGskDAZIw8HFYcaS7iwCQtt', cacheProvider: 'memory' }],
   ],
   /*
   ** Axios module configuration
